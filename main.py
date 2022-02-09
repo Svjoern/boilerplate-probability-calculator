@@ -10,9 +10,10 @@ hat = prob_calculator.Hat(blue=4, red=2, green=6)
 
 probability = prob_calculator.experiment(
     hat=hat,
-    expected_balls={"blue": 2,
+    # expected_balls={"blue": 2,
+    expected_balls={"blue": 1,
                     "red": 1},
-    num_balls_drawn=4,
+    num_balls_drawn=3,
     # num_experiments=3000)
     num_experiments=3)
 print("Probability:", probability)
