@@ -18,10 +18,14 @@ hat = prob_calculator.Hat(blue=4, red=2, green=6)
 
 # print(hat.draw(6))
 
-print("expected_balls:  {'blue': 2, 'red': 1}")
-probability = prob_calculator.experiment(hat,{"blue": 2,"red": 1},11,10) 
+# print("expected_balls:  {'blue': 2, 'red': 1}")
+# probability = prob_calculator.experiment(hat,{"blue": 2,"red": 1},4,10) 
+
+# print("changed expected_balls:  {'green': 2, 'red': 1}")
+# probability = prob_calculator.experiment(hat,{"green": 2,"red": 1},4,10) 
+
     # num_experiments=3000)
-print("Probability:", probability)
+# print("Probability:", probability)
 
 # Run unit tests automatically
-# main(module='test_module', exit=False)
+main(module='test_module', exit=False)
