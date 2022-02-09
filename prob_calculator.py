@@ -8,7 +8,7 @@ class Hat:
 
     def __init__(self, **ball_colors_numbr):
         self.addContent(ball_colors_numbr)
-        print("hat.contents:\t", ball_colors_numbr)
+        # print("hat.contents:\t", ball_colors_numbr)
 
     def addContent(self, ball_colors_numbr):
         self.contents.clear()
@@ -48,7 +48,7 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
     for ball in expected_balls:
         # print("\nfind", ball, "ball", test_target[ball], "times \n")
         target_total += expected_balls[ball]
-    print("target_total:",target_total,"\n")
+    # print("target_total:",target_total,"\n")
 
     for experiment_number in range(num_experiments):
         test_target_total = 0
@@ -77,5 +77,5 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
         if ctr >= target_total:
             M +=1
     P = M / N
-    print("M", M, "N", N)
+    # print("M", M, "N", N)
     return P
